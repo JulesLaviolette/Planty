@@ -53,3 +53,34 @@ nav div ul li {
     padding: 20px;
 }
 
+/* Page nous rencontrer */
+
+.section-rencontrer-1 {
+    border-radius: 0px 0px 50% 50% / 0px 0px 20% 20%;
+
+    background-image: url("image/Image1.png");
+    background-repeat: no-repeat;
+    background-position: 10% 30% !important;
+    background-size: 200px 200px !important;
+}
+
+.section-rencontrer-2 {
+    background-image: url("image/Image2.png");
+    background-repeat: no-repeat;
+    background-position: 95% 100%!important;
+    background-size: 200px 200px !important;
+}
+
+.section-rencontrer-3 {
+    background-image: url("image/Image3.png");
+    background-repeat: no-repeat;
+    background-position: 34.5% 88% !important;
+    background-size: 200px 200px !important;
+}
+
+.section-rencontrer-3 input, .section-rencontrer-3 textarea {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px !important;
+}
+
+
