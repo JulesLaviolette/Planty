@@ -241,3 +241,38 @@ p .wpcf7-submit:hover {
 .bouton-nombre:hover {
     background-color: #C02E44;
 }
+
+@media screen and (max-width: 920px) {
+
+    .bloc-inferieur {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .livraison {
+        border-left: none;
+        border-top: solid 1px white;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .informations {
+        padding: 0px 0px 30px 0px;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .container .carte .carte-inferieur p{
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu-item-85 {
+        margin: 0px
+    }
+}
