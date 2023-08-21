@@ -14,18 +14,20 @@ Template: astra
 
 li.bouton-commander.menu-item {
     background-color:#DC9F96 !important;
-    width: 250px;
+    width: 240px;
 }
 
-#menu-item-166 > a:nth-child(1) {
+.bouton-commander.menu-item a{
+    display: flex;
+    justify-content: center;
     display: block;
-    color: white;
+    color: white !important;
     font-weight: 600;
     text-align: center;
 }
 
 nav div ul li {
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
 #ast-desktop-header > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
@@ -53,6 +55,10 @@ nav div ul li {
     padding: 20px;
 }
 
+#bouton-admin {
+    color: black;
+    
+}
 /* Page nous rencontrer */
 
 .section-rencontrer-1 {
@@ -74,7 +80,7 @@ nav div ul li {
 .section-rencontrer-3 {
     background-image: url("image/Image3.png");
     background-repeat: no-repeat;
-    background-position: 34.5% 88% !important;
+    background-position: 34.5% 88% ;
     background-size: 200px 200px !important;
 }
 
@@ -83,4 +89,155 @@ nav div ul li {
     border-radius: 10px !important;
 }
 
+@media screen and (max-width: 976px) {
 
+    .section-rencontrer-1 {
+    background-position: 5% 0% !important;
+    }
+
+    .section-rencontrer-3 {
+    background-position: 0% 85% !important;
+    }
+    
+}
+
+/* Page Commande */
+
+.wpcf7-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulaire-commande {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    color: white;
+    font-size: large;
+}
+
+.formulaire-commande h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.bloc-superieur {
+    border-top: solid 1px white !important;
+    padding-top: 30px;
+    width: 72%;
+}
+
+.bloc-inferieur {
+    display: flex;
+    border-top: solid 1px white;
+    margin-top: 30px;
+    padding-top: 50px;
+    justify-content: center;
+    width: 72%;
+}
+
+.livraison {
+    padding-left: 50px;
+    border-left: solid 1px white;
+}
+.informations{
+    padding-right: 50px;
+}
+
+p .wpcf7-submit {
+    background-color: #E0B9B4;
+    color: white;
+    height: 55px !important;
+    width: 200px !important;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+p .wpcf7-submit:hover {
+    background-color: #C02E44;
+    color: white;
+
+}
+
+.wpcf7-form > p:nth-child(3){
+    width: 200px !important;
+}
+
+.formulaire-commande .bloc-inferieur .livraison span input, .formulaire-commande .bloc-inferieur .informations span input{
+    margin-top: 15px;
+    border-radius: 7px;
+    height: 65px;
+}
+
+.formulaire-commande .bloc-superieur .fraise {
+    background-image: url("image/fraise.png") !important;
+    background-size: cover;
+}
+
+.formulaire-commande .bloc-superieur .pamplemousse {
+    background-image: url("image/pamplemousse.png") !important;
+    background-size: cover;
+}
+
+.formulaire-commande .bloc-superieur .framboise {
+    background-image: url("image/framboise.png") !important;
+    background-size: cover;
+}
+
+.formulaire-commande .bloc-superieur .citron {
+    background-image: url("image/citron.png") !important;
+    background-size: cover;
+}
+
+.formulaire-commande .bloc-superieur .image-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 800;
+    height: 130px;
+    font-size: larger;
+} 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .carte .carte-inferieur p{
+    width: 43%;
+}
+
+.container .carte .carte-inferieur .nombre-fruit {
+    border-radius: 7px;
+    height: 56px;
+    font-family: "Inter";
+}
+
+.carte{
+    width: 23%;
+}
+
+.carte-inferieur {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bouton-nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0B9B4;
+    color: white;
+    font-size: 15px;
+    height: 56px !important;
+    width: 50% !important;
+    border-radius: 5px;
+}
+
+.bouton-nombre:hover {
+    background-color: #C02E44;
+}
