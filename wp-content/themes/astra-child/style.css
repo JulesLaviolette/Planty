@@ -47,6 +47,10 @@ nav div ul li {
     width: 65% !important;
 }
 
+.bouton-commander {
+    order: 1;
+}
+
 .bouton-commander:hover a, .uagb-forms-main-submit-button:hover {
     background-color: #C02E44 !important;
 }
@@ -56,9 +60,21 @@ nav div ul li {
 }
 
 #bouton-admin {
+    display: flex;
+    align-items: center;
     color: black;
-    
 }
+
+.bouton-rencontrer a{
+    padding-right: 0px !important;
+}
+
+#bouton-admin:hover, .bouton-rencontrer a:hover {
+    font-size: small;
+    font-weight: 600;
+    transition-duration: 0s;
+}
+
 /* Page nous rencontrer */
 
 .section-rencontrer-1 {
@@ -129,6 +145,7 @@ nav div ul li {
     padding-top: 30px;
     width: 72%;
 }
+
 
 .bloc-inferieur {
     display: flex;
@@ -207,12 +224,9 @@ p .wpcf7-submit:hover {
     justify-content: space-between;
 }
 
-.container .carte .carte-inferieur p{
-    width: 43%;
-}
 
 .container .carte .carte-inferieur .nombre-fruit {
-    border-radius: 7px;
+    border-radius: 7px 0px 0px 7px;
     height: 56px;
     font-family: "Inter";
 }
@@ -242,6 +256,52 @@ p .wpcf7-submit:hover {
     background-color: #C02E44;
 }
 
+.compte-fruit{
+    display: flex;
+    width: 45%;
+}
+
+.plus, .moins{
+    background-color: #DC9F96;
+}
+
+.plus {
+    border-bottom: solid 1px white;
+    border-top-right-radius: 5px;
+    height: 43.5%;
+}
+
+.moins {
+    border-bottom-right-radius: 5px;
+    height: 43.5%;
+}
+
+.compte-fruit p {
+    width: 60%;
+}
+
+.colonne p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.colonne {
+    width: 35%;
+}
+
+.colonne span {
+    text-align: center;
+}
+
+.compte-fruit input {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 920px) {
 
     .bloc-inferieur {
@@ -266,8 +326,8 @@ p .wpcf7-submit:hover {
         width: 100%;
     }
 
-    .container .carte .carte-inferieur p{
-        width: 33%;
+    .plus {
+        height: 42.5%;
     }
 }
 

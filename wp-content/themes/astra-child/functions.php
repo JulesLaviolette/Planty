@@ -26,8 +26,8 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 
 add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
 function add_extra_item_to_nav_menu( $items, $args ) {
-    if (is_user_logged_in() && $args->theme_location == "primary" || "") {
-        $items .= '<li><a id="bouton-admin" href="'. get_permalink( get_option('') ) .'">Admin</a></li>';
+    if (is_user_logged_in() && ($args->theme_location == "primary" || $args->theme_location == "mobile_menu")) {
+        $items .= '<li class="menu-item"><a id="bouton-admin" href="'. get_permalink( get_option('') ) .'">Admin</a></li>';
     }
 
     return $items;
